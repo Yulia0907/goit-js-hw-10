@@ -41,21 +41,21 @@ function listCountries(countries) {
     countryList.innerHTML = markup;
   }
   
-  function cardOneCountry(countries) {
-        const markup = countries
-          .map(country => {
-            return `<li>
-            <div class="country">
-        <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="20" hight="20">
-        <p><b>${country.name.official}</b></p>
-        </div>
-              <p><b>Capital:</b> ${country.capital}</p>
-              <p><b>Population:</b> ${country.population}</p>
-              <p><b>Languages:</b> ${Object.values(country.languages)} </p>
-            </li>`;
+function cardOneCountry(countries) {
+      const markup = countries
+        .map(country => {
+          return `<li>
+          <div class="country">
+              <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="20" hight="20">
+               <p><b>${country.name.official}</b></p>
+          </div>
+          <p><b>Capital:</b> ${country.capital}</p>
+          <p><b>Population:</b> ${country.population}</p>
+          <p><b>Languages:</b> ${Object.values(country.languages)} </p>
+          </li>`;
           })
-          .join('');
-        countryInfo.innerHTML = markup;
+        .join('');
+      countryInfo.innerHTML = markup;
   }
 
 function removeHtml() {

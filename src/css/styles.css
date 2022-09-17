@@ -7,7 +7,6 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
   background-color:rgb(227, 237, 240);
@@ -20,8 +19,9 @@ body {
   margin-bottom: 16px;
 }
 
-input:focus {
-  color: rgb(15, 15, 238);
+input {
+    border: 0.3rem solid rgb(35, 182, 226);
+    border-radius: 4px;
 }
 
 .country-list, .country-info {
